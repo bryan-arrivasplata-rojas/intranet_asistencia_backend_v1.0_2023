@@ -1,0 +1,81 @@
+.content {
+  margin-left: 250px; /* Ancho del sidebar */
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-list {
+  max-height: 400px; /* Establece la altura máxima del contenido de la lista */
+  padding-right: 10px; /* Agrega un poco de espacio a la derecha para la barra de desplazamiento */
+  padding-left: 0px;
+}
+
+.sidebar-list li {
+  padding-top:14px;
+  padding-bottom:14px;
+  padding-right:20px;
+}
+
+.sidebar-list .list{
+  font-size: 1.4em;
+  cursor: pointer;
+  margin: 2px;
+}
+.sidebar-list .list:hover{
+  background: #2e4872;
+}
+.sidebar-list .list a{
+  text-decoration: none;
+  color: white;
+}
+.sidebar-list .list a i{
+  padding: 10px;
+}
+
+.sidebar-list li ul.list-sub li{
+  font-size: 0.8em;
+}
+.sidebar-list li a:hover{
+  color:white !important;
+}
+.sidebar-list li ul.list-sub {
+  padding-left: 8px;
+  display: none;
+}
+
+.sidebar-list li:hover .list-sub {
+  display: block;
+}
+.sidebar-list li:hover .list-sub li:hover {
+  background: #4c6a9b;
+  font-size: 0.9em;
+}
+.hide-sidebar {
+  transform: translateX(-250px);
+}
+.hide-content {
+  margin-left: 0;
+  transition: margin-left 0.5s ease;
+}
+
+.informacion_usuario{
+  margin-top: 5px;
+  text-align: center;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+.informacion_usuario h5{
+  color:white;
+  margin:0px;
+  padding: 15px;
+}
+.image_logo{
+  height: 150px !important;
+  border-radius: 50%;
+}
+ul.sidebar-list li.list ul.list-sub li.active{
+  background: #4c6a9b;
+  margin: 2px;
+}
+ul.sidebar-list li.list.active{
+  background: #2e4872;
+}

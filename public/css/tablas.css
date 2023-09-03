@@ -1,0 +1,81 @@
+/*.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    border: 0px !important;
+    background:none !important;
+}*/
+.app .card{
+    margin: 0px !important;
+}
+.card-header{
+    place-items: center;
+    background-color: #ffffff;
+    border-bottom:0px;
+    border-radius:5px !important;
+}
+.card-header h5 {
+    margin:0px;
+}
+.container-tabla{
+    overflow-x: auto;
+}
+#DataTables_Table_0_length{
+    padding: 5px;
+}
+/* Centrar todas las celdas de las columnas */
+/* Centrar contenido de todas las celdas, excepto la primera columna */
+.table-livewire tbody td:not(:first-child),
+.table-livewire tfoot td:not(:first-child),
+.table-livewire thead th:not(:first-child) {
+    text-align: center;
+}
+
+.custom-copy-button {
+    background-color: #FF5733 !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+    /* Agrega otros estilos según sea necesario */
+}
+
+/* Estilos para el botón de Excel */
+.custom-excel-button {
+    background-color: #5CB85C !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+    /* Agrega otros estilos según sea necesario */
+}
+
+
+.custom-pdf-button {
+    background-color: #337AB7 !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+    /* Agrega otros estilos según sea necesario */
+}
+
+/* Estilos para el botón de CSV */
+.custom-csv-button {
+    background-color: #F0AD4E !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+    /* Agrega otros estilos según sea necesario */
+}
+
+/* Estilos para el botón de visibilidad de columnas */
+.custom-colvis-button {
+    background-color: #D9534F !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+    /* Agrega otros estilos según sea necesario */
+}
+.custom-colvis-button {
+    background-color: #D9534F !important; /* Cambia este color según tus preferencias */
+    color: white !important;
+}
+
+.image_profile{
+    height: 50px !important;
+    border-radius: 50%;
+}
+
+.hide-table{
+    display: none;
+}

@@ -1,0 +1,10 @@
+.navbar-brand{
+    cursor:pointer;
+}
+.sidehead-form{
+    margin: 0px;
+}
+.image_profile_head{
+    height: 35px !important;
+    border-radius: 50%;
+}
