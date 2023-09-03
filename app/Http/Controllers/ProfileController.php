@@ -116,12 +116,10 @@ class ProfileController extends Controller
         }
         // Verificar si existe el campo "message" en la respuesta
         if (!property_exists($respuesta, 'message')) {
-            if(session('name_rol')!='admin'){
-                session()->put('name_profile', $respuesta->name_profile);
-                session()->put('lastname', $respuesta->lastname);
-                session()->put('email', $respuesta->email);
-                session()->put('image', $respuesta->image);
-            }
+            session()->put('name_profile', $respuesta->name_profile);
+            session()->put('lastname', $respuesta->lastname);
+            session()->put('email', $respuesta->email);
+            session()->put('image', $respuesta->image);
             // El campo "message" NO está presente en la respuesta, lo que significa que no hay errores.
             $success = 'El perfil '.$respuesta -> idProfile.' actualizo correctamente sus datos';
             return redirect()->route('profiles.index')->with('success',$success);
